@@ -32,6 +32,7 @@ function getMDXFiles(dir) {
 
 function readMDXFile(filePath) {
   let rawContent = fs.readFileSync(filePath, 'utf-8')
+  console.log(rawContent)
   return parseFrontmatter(rawContent)
 }
 
